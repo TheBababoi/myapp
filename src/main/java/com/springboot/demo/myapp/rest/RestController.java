@@ -12,4 +12,14 @@ public class RestController {
         return "Hello World";
     }
 
+   @GetMapping("/workout")
+    public String getWorkout(){
+        return "Begin Bench Pressing!";
+    }
+
+    @GetMapping("/finishWorkout")
+    public String getFinishWorkout(){
+        return "Drink Protein Shake";
+    }
+
 }
